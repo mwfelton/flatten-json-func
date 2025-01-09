@@ -1,9 +1,14 @@
 {
-    "version": 2,
-    "functions": {
-      "api/flattenJSON.js": {
-        "runtime": "nodejs18.x"
-      }
+  "version": 2,
+  "functions": {
+    "api/flattenJSON.js": {
+      "runtime": "@vercel/node@5.0.2"
     }
-  }
-  
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/flattenJSON.js"
+    }
+  ]
+}

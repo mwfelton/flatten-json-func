@@ -4,12 +4,14 @@
   "description": "A lightweight Node.js function that flattens nested JSON objects into a single-level structure with dot-separated keys. Designed for simplicity, flexibility, and deployment as a cloud function, this utility is ideal for transforming complex JSON structures into a more manageable format.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "node ./build.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/node": "^5.0.2",
     "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "vercel": "^39.2.6"

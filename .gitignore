@@ -46,3 +46,4 @@ coverage/
 # Miscellaneous
 *.bak
 *.swp
+.vercel

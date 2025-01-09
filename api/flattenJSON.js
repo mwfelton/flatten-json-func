@@ -1,4 +1,4 @@
-export default async (req, res) => {
+module.exports = async (req, res) => {
     if (req.method === 'POST') {
       const { input } = req.body;
       if (!input) {
